@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.2">
+    <description></description>
+    <groupId>8d9a8288-0164-1000-2673-17ef23b6d42a</groupId>
+    <name>Enrich with city name as attribute</name>
+    <snippet>
+        <connections>
+            <id>0593373a-9e42-38c3-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>0236e89a-f9df-3daf-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>37c9fcbd-a68b-3a60-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>071cbb1d-1dcf-3ad3-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>34929349-a9a4-3d4a-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <selectedRelationships>unmatched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>6300ef57-4a7c-3f70-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>4022b6df-fdc3-339b-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>7f13ba7a-575c-34ea-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>a772571c-6f74-3b33-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>9c5dd5c3-fa30-3bb1-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>34929349-a9a4-3d4a-0000-000000000000</id>
+                <type>FUNNEL</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <selectedRelationships>unmatched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>7f13ba7a-575c-34ea-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>ba3b8d1f-1386-374f-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>37c9fcbd-a68b-3a60-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>6300ef57-4a7c-3f70-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>e2e39a97-bf91-3a8b-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>6300ef57-4a7c-3f70-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>matched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>7f13ba7a-575c-34ea-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>f8d85a75-4f4b-37d7-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>507.0</x>
+                <y>709.4999999999999</y>
+            </bends>
+            <destination>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>0236e89a-f9df-3daf-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <name></name>
+            <selectedRelationships>unmatched</selectedRelationships>
+            <source>
+                <groupId>af37eb27-69ef-3397-0000-000000000000</groupId>
+                <id>37c9fcbd-a68b-3a60-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <controllerServices>
+            <id>a61800db-fd81-30e4-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <bundle>
+                <artifact>nifi-lookup-services-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <comments></comments>
+            <descriptors>
+                <entry>
+                    <key>1</key>
+                    <value>
+                        <name>1</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>2</key>
+                    <value>
+                        <name>2</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>3</key>
+                    <value>
+                        <name>3</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>4</key>
+                    <value>
+                        <name>4</name>
+                    </value>
+                </entry>
+                <entry>
+                    <key>5</key>
+                    <value>
+                        <name>5</name>
+                    </value>
+                </entry>
+            </descriptors>
+            <name>SimpleKeyValueLookupService</name>
+            <persistsState>false</persistsState>
+            <properties>
+                <entry>
+                    <key>1</key>
+                    <value>Пловдив</value>
+                </entry>
+                <entry>
+                    <key>2</key>
+                    <value>София</value>
+                </entry>
+                <entry>
+                    <key>3</key>
+                    <value>Велико Търново</value>
+                </entry>
+                <entry>
+                    <key>4</key>
+                    <value>Варна</value>
+                </entry>
+                <entry>
+                    <key>5</key>
+                    <value>Тутракан</value>
+                </entry>
+            </properties>
+            <state>ENABLED</state>
+            <type>org.apache.nifi.lookup.SimpleKeyValueLookupService</type>
+        </controllerServices>
+        <funnels>
+            <id>34929349-a9a4-3d4a-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>573.0</x>
+                <y>376.0</y>
+            </position>
+        </funnels>
+        <processors>
+            <id>0236e89a-f9df-3daf-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>336.0439453125</x>
+                <y>769.1495361328124</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>log-message</key>
+                        <value>
+                            <name>log-message</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>log-level</key>
+                        <value>
+                            <name>log-level</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>log-prefix</key>
+                        <value>
+                            <name>log-prefix</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>log-message</key>
+                        <value>Излел е Делю хайдутин</value>
+                    </entry>
+                    <entry>
+                        <key>log-level</key>
+                        <value>warn</value>
+                    </entry>
+                    <entry>
+                        <key>log-prefix</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>LogMessage</name>
+            <relationships>
+                <autoTerminate>true</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.LogMessage</type>
+        </processors>
+        <processors>
+            <id>37c9fcbd-a68b-3a60-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>611.5</x>
+                <y>558.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>
+                            <name>Routing Strategy</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>city</key>
+                        <value>
+                            <name>city</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Routing Strategy</key>
+                        <value>Route to 'match' if all match</value>
+                    </entry>
+                    <entry>
+                        <key>city</key>
+                        <value>${city:toUpper():equals('ВАРНА')}</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>RouteOnAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.RouteOnAttribute</type>
+        </processors>
+        <processors>
+            <id>6300ef57-4a7c-3f70-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>1.0</x>
+                <y>467.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>city</key>
+                        <value>
+                            <name>city</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>lookup-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.lookup.StringLookupService</identifiesControllerService>
+                            <name>lookup-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>include-empty-values</key>
+                        <value>
+                            <name>include-empty-values</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>city</key>
+                        <value>${id_store}</value>
+                    </entry>
+                    <entry>
+                        <key>lookup-service</key>
+                        <value>a61800db-fd81-30e4-0000-000000000000</value>
+                    </entry>
+                    <entry>
+                        <key>include-empty-values</key>
+                        <value>true</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>LookupAttribute</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.LookupAttribute</type>
+        </processors>
+        <processors>
+            <id>7f13ba7a-575c-34ea-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>201.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Destination</key>
+                        <value>
+                            <name>Destination</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>
+                            <name>Return Type</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>
+                            <name>Null Value Representation</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>id_store</key>
+                        <value>
+                            <name>id_store</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>
+                            <name>Path Not Found Behavior</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Destination</key>
+                        <value>flowfile-attribute</value>
+                    </entry>
+                    <entry>
+                        <key>Return Type</key>
+                        <value>json</value>
+                    </entry>
+                    <entry>
+                        <key>Null Value Representation</key>
+                        <value>empty string</value>
+                    </entry>
+                    <entry>
+                        <key>id_store</key>
+                        <value>$.id_store</value>
+                    </entry>
+                    <entry>
+                        <key>Path Not Found Behavior</key>
+                        <value>ignore</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>EvaluateJsonPath</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>matched</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>unmatched</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.EvaluateJsonPath</type>
+        </processors>
+        <processors>
+            <id>a772571c-6f74-3b33-0000-000000000000</id>
+            <parentGroupId>af37eb27-69ef-3397-0000-000000000000</parentGroupId>
+            <position>
+                <x>4.99993896484375</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.7.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>{ 
+"created_at" : "Thu Sep 28 08:08:09 CEST 2017", 
+"id_store" : 4, 
+"event_type" : "store capacity",  
+"id_transaction" : "1009331737896598289",
+"extra_property" : "тръбата",
+"id_product" : 889, 
+"value_product" : 45
+}
+</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0/15 * * * * ?</schedulingPeriod>
+                <schedulingStrategy>CRON_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>GenerateFlowFile</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+    </snippet>
+    <timestamp>07/19/2018 18:12:59 EEST</timestamp>
+</template>

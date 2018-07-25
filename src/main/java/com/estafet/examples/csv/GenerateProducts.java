@@ -10,7 +10,7 @@ public class GenerateProducts {
     final static String OUT_PATH = "/home/ddelov/dev/nifi-1.7.0/work/csv/";
     final static char field_delimiter ='|';
     final static char string_wrapper = '"';
-    final static int RECORDS_COUNT = 100;
+    final static int RECORDS_COUNT = 25;
 
     static Random rnd = new Random();
 
